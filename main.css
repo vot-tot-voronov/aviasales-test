@@ -77,7 +77,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 232px;
     height: 40px;
     padding-left: 20px;
-    cursor: url('../img/Cursor.png'), pointer;
+    cursor: url('Cursor.png'), pointer;
 }
 .parametres_list:hover {
     background-color: #F1FCFF;
@@ -90,7 +90,7 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     z-index: -1;
     opacity: 0;
-    cursor: url('../img/Cursor.png'), pointer;
+    cursor: url('Cursor.png'), pointer;
 }
 .inputList+label {
     display: inline-flex;
@@ -114,7 +114,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .inputList:checked+label::before {
     border-color: #2196F3;
-    background-image: url("../img/Shape.png");
+    background-image: url("Shape.png");
 }
 .inputList:not(:disabled):not(:checked)+label:hover::before {
     border-color: #b3d7ff;
@@ -127,7 +127,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #4A4A4A;
     margin-bottom: 0px;
     margin-left: 10px;
-    cursor: url('../img/Cursor.png'), pointer;
+    cursor: url('Cursor.png'), pointer;
 }
 .content {
     padding-left: 86px;
@@ -142,7 +142,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 50px;
     border: 1px solid #DFE5EC;
     border-radius: 5px;
-    cursor: url('../img/Cursor.png'), pointer;
+    cursor: url('Cursor.png'), pointer;
 }
 .tabs_block {
     display: flex;
