@@ -1,0 +1,245 @@
+/* ------ Specification ------ */
+body {
+	font-family: 'Open sans', 'Arial', sans-serif;
+	padding: 0;
+	margin: 0;
+    font-size: 18px;
+    background: #F3F7FA;
+}
+div, p, form, input, a, span, button {
+	box-sizing: border-box;
+}
+p {
+	margin: 0;
+    font-size: 12px;
+}
+ul, li {
+	display: block;
+	padding: 0;
+    margin: 0;
+}
+a, a:hover, a:active, a:focus {
+	text-decoration: none;
+}
+a, button, input {
+	padding: 0;
+}
+input, input:hover, input:focus, input:active,
+button, button:hover, button:focus, button:active
+ {
+	outline: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+.container {
+    width: 960px;
+    height: 1350px;
+
+    background: #F3F7FA;
+}
+.logo {
+    text-align: center;
+}
+.logo img {
+    width: 60px;
+    height: 60px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.content {
+    display: flex;
+}
+.filter {
+    width: 232px;
+    height: 252px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+.count_transfer {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #4A4A4A;
+    padding: 20px 20px 10px;
+
+}
+.parametres_list {
+    display: flex;
+    align-items: center;
+    width: 232px;
+    height: 40px;
+    padding-left: 20px;
+    cursor: url('../img/Cursor.png'), pointer;
+}
+.parametres_list:hover {
+    background-color: #F1FCFF;
+}
+.parametres_list:hover:last-child {
+    border-radius: 0 0 5px 5px;
+    background-color: #F1FCFF;
+}
+.parametres_list input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    cursor: url('../img/Cursor.png'), pointer;
+}
+.inputList+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+.inputList+label::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    margin-left: -10px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid#9ABBCE;
+    border-radius: 2px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+.inputList:checked+label::before {
+    border-color: #2196F3;
+    background-image: url("../img/Shape.png");
+}
+.inputList:not(:disabled):not(:checked)+label:hover::before {
+    border-color: #b3d7ff;
+  }
+.parametres_list label {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 20px;
+    color: #4A4A4A;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    cursor: url('../img/Cursor.png'), pointer;
+}
+.content {
+    padding-left: 86px;
+}
+.information {
+    margin-left: 20px;
+}
+.tabs {
+    display: flex;
+    align-items: center;
+    width: 503px;
+    height: 50px;
+    border: 1px solid #DFE5EC;
+    border-radius: 5px;
+    cursor: url('../img/Cursor.png'), pointer;
+}
+.tabs_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    height: 100%;
+    width: 251px;
+    
+}
+.tabs_cheap {
+    border-radius: 5px 0 0 5px;
+}
+.tabs_fast {
+    border-radius: 0 5px 5px 0;
+}
+.tabs__text {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    color: #4A4A4A;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+.active {
+    background: #2196F3;
+}
+.active p {
+    color: #FFFFFF;
+}
+.ticket {
+    width: 502px;
+    height: 184px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    animation-name: fade;
+    animation-duration: 1s;
+}
+@keyframes fade{
+    from {
+        opacity: 0.1;
+    }   to {
+        opacity: 1;
+    }
+}
+.line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+.line_first {
+    margin-top: 0;
+}
+.line_third {
+    margin-top: 10px;
+}
+.price_text {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    color: #2196F3;
+    margin-top: 2px; 
+}
+.company_logo {
+    margin-right: 30px;
+}
+.title_style {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #A0B0B9;
+}
+.inf_style {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    color: #4A4A4A;
+}
+.duration {
+    text-transform: lowercase;
+}
+.cell {
+    max-width: 140px;
+    width: 100%;
+}
