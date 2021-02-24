@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
+    crossorigin="anonymous">
+    <title>AviaTest</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="img/Logo.png" alt="logo">
+        </div>
+        <div class="content">
+            <div class="filter">
+                <p class="count_transfer">Количество пересадок</p>
+                <ul class="parametres">
+                    <li class="parametres_list">
+                        <input id="1" type="checkbox" class="inputList" name="all" checked>
+                        <label for="1">Все</label>
+                    </li>
+                    <li class="parametres_list">
+                        <input id="2" type="checkbox" class="inputList" name="without">
+                        <label for="2">Без пересадок</label>
+                    </li>
+                    <li class="parametres_list">
+                        <input id="3" type="checkbox" class="inputList" name="one">
+                        <label for="3">1 пересадка</label>
+                    </li>
+                    <li class="parametres_list">
+                        <input id="4" type="checkbox" class="inputList" name="two">
+                        <label for="4">2 пересадки</label>
+                    </li>
+                    <li class="parametres_list">
+                        <input id="5" type="checkbox" class="inputList" name="three">
+                        <label for="5">3 пересадки</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="information">
+                <div class="tabs">
+                    <div class="tabs_block tabs_cheap active">
+                        <p class="tabs__text">Самый дешевый</p>
+                    </div>
+                    <div class="tabs_block tabs_fast">
+                        <p class="tabs__text">Самый быстрый</p>
+                    </div>
+                </div>
+                <div class="tickets"></div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
